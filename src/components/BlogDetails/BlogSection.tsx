@@ -1,19 +1,17 @@
 import React from 'react';
 
-const BlogSection = ({ heading, content, imageSrc }) => {
+const BlogSection = ({ subheading, content, imageSrc }) => {
   return (
     <div className="mb-8">
-      {heading && (
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">{heading}</h2>
-      )}
-      {imageSrc && (
-        <img
-          src={imageSrc}
-          alt={heading || 'Blog image'}
-          className="w-full max-w-md mx-auto mb-4 rounded-lg"
-        />
-      )}
-      {content && <p className="text-gray-600 leading-relaxed">{content}</p>}
+      <h2 className="text-2xl font-semibold text-gray-800 mb-4">{subheading}</h2>
+      <div className="flex flex-col md:flex-row gap-6">
+        <p className="text-gray-600 text-base flex-1">{content}</p>
+        {imageSrc && (
+          <img src={imageSrc} alt={subheading} className="w-full md:w-1/3 h-48 object-cover rounded-lg" />
+        )}
+      </div>
     </div>
   );
 };
+
+export default BlogSection;
