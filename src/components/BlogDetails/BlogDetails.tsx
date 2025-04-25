@@ -3,13 +3,25 @@ import BlogHeader from './BlogHeader';
 import BlogHero from './BlogHero';
 import BlogSection from './BlogSection';
 
+interface BlogSectionData {
+  subheading: string;
+  content: string;
+  imageSrc?: string | null;
+}
 
-const BlogDetailPage = () => {
-  // Sample blog data (in a real app, this would come from an API or props)
-  const blogData = {
+interface BlogData {
+  title: string;
+  date: string;
+  heroImage: string;
+  introduction: string;
+  sections: BlogSectionData[];
+}
+
+const BlogDetailPage: React.FC = () => {
+  const blogData: BlogData = {
     title: "Discover the Top 10 Black-Owned Barber Shops in San Antonio",
     date: "March 20, 2024",
-    heroImage: "https://via.placeholder.com/1200x400",
+    heroImage: "./asset/blog-details-1.jpg",
     introduction:
       "San Antonio is a city with a rich cultural history, where the fabric of its community is woven through the local barber shops that serve as more than just grooming centers. Central to the Black community, these barber shops are cultural hubs where the community gathers to exchange stories, share laughter, and build bonds. This article explores the top 10 Black-owned barber shops in San Antonio, places that not only provide exceptional grooming services but also celebrate the culture and heritage of their patrons.",
     sections: [
@@ -17,7 +29,7 @@ const BlogDetailPage = () => {
         subheading: "The Essence of a Black Barber Shop in Home Base",
         content:
           "A Black barber shop is more than just a place to get a haircut – it’s a cultural institution, a sanctuary of identity and community. In San Antonio, these barber shops have been common spaces for connection and camaraderie for decades. Beyond the haircuts, they’re hubs for mentorship, cultural dialogue, and social connection within the community. Whether it’s political debates, sports discussions, or simply catching up with friends, these spaces are integral to the community’s fabric. In this section, we’ll explore how these barber shops in San Antonio maintain the traditions of the Black community while also serving as welcoming spaces for all.",
-        imageSrc: "https://via.placeholder.com/400x300",
+        imageSrc: "./asset/blog-details-2.jpg",
       },
       {
         subheading: "Black-Owned Barber Shop in Orlando – Diverse Services for Every Need",
@@ -49,7 +61,7 @@ const BlogDetailPage = () => {
             key={index}
             subheading={section.subheading}
             content={section.content}
-            imageSrc={section.imageSrc}
+            imageSrc={section.imageSrc || undefined}
           />
         ))}
       </div>

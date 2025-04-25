@@ -1,13 +1,23 @@
 import React from 'react';
 
-const BlogSection = ({ subheading, content, imageSrc }) => {
+interface BlogSectionProps {
+  subheading: string;
+  content: string;
+  imageSrc?: string;
+}
+
+const BlogSection: React.FC<BlogSectionProps> = ({ subheading, content, imageSrc }) => {
   return (
     <div className="mb-8">
       <h2 className="text-2xl font-semibold text-gray-800 mb-4">{subheading}</h2>
-      <div className="flex flex-col md:flex-row gap-6">
+      <div>
         <p className="text-gray-600 text-base flex-1">{content}</p>
         {imageSrc && (
-          <img src={imageSrc} alt={subheading} className="w-full md:w-1/3 h-48 object-cover rounded-lg" />
+          <img
+            src={imageSrc}
+            alt={subheading}
+            className="w-full h-full object-cover rounded-lg cursor-pointer"
+          />
         )}
       </div>
     </div>

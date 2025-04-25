@@ -12,9 +12,13 @@ const Navbar = () => {
                 <ul className='flex justify-between w-1/2'>
                    <Link href={'/'}> <li>Blog</li></Link>
                    <Link href={'/blogDetails'}> <li>Blog Details</li></Link>
-                   <Link href={'/about'}> <li>About</li></Link>
-                   <Link href={'/products/add'}> <li>Add Products</li></Link>
-                   <Link href={'/products'}> <li>Products</li></Link>
+                   <Link href={'/feedback'}> <li>FeedBack</li></Link>
+                   <Link href={'/service'}> <li>Service Card </li></Link>
+                   <Link href={'/service2'}> <li>Service Card 2</li></Link>
+                   <Link href={'/metricCard'}> <li>MetricCard</li></Link>
+                   <Link href={'/activity'}> <li>RecentActivity</li></Link>
+                   <Link href={'/serviceDetails'}> <li>Service Detials</li></Link>
+                   <Link href={'/tabPanel'}> <li>Subscription </li></Link>
                  
                     
                 </ul>
