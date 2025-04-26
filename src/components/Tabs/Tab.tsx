@@ -11,7 +11,7 @@ const Tab: React.FC<TabProps> = ({ tabs }) => {
   return (
     <div>
       {/* Tab Navigation */}
-      <div className="flex gap-2 mb-4">
+      <div className="flex gap-2 mb-4 bg-">
         {tabs.map((tab, index) => (
           <button
             key={index}
@@ -28,7 +28,7 @@ const Tab: React.FC<TabProps> = ({ tabs }) => {
       </div>
 
       {/* Tab Content */}
-      <div>{tabs[activeTab].content}</div>
+      <div className=''>{tabs[activeTab].content}</div>
     </div>
   );
 };

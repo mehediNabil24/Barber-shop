@@ -16,7 +16,7 @@ const SubscriptionPage: React.FC = () => {
   ];
 
   return (
-    <div className="max-w-5xl mx-auto p-6">
+    <div className="max-w-6xl bg-[#F1F5F9] mx-auto p-6">
         <div className='flex justify-between'>
       {/* Page Header */}
       <h1 className="text-2xl font-semibold text-gray-800 mb-6">Your Subscription</h1>
@@ -24,6 +24,8 @@ const SubscriptionPage: React.FC = () => {
       {/* Tab Component */}
       <Tab tabs={tabs} />
       </div>
+
+      
 
       
     </div>

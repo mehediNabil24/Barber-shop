@@ -22,6 +22,7 @@ const ServiceDetailsCard: React.FC<ServiceCardProps> = ({
   return (
     <div className="flex flex-col gap-3 py-4">
       {/* Discount and Title */}
+      <div className='flex flex-row justify-between items-center'>
       <div className="flex flex-col gap-1">
         <span className="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded font-medium self-start">
           {discount}
@@ -33,14 +34,15 @@ const ServiceDetailsCard: React.FC<ServiceCardProps> = ({
       </div>
 
       {/* Price, Duration, and Book Button */}
-      <div className="flex justify-between items-center">
+      <div className="flex flex-row gap-2">
         <div className="flex flex-col">
           <span className="text-lg font-semibold text-gray-800">${price}</span>
           <span className="text-sm text-gray-500">{duration}</span>
         </div>
-        <button className="bg-yellow-400 text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-yellow-500">
+        <button className="bg-[#FFA600] text-white text-sm font-medium px-[24px] py-[12px] rounded-lg hover:bg-yellow-500">
           Book
         </button>
+      </div>
       </div>
 
       {/* Gallery Images */}

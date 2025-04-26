@@ -51,9 +51,17 @@ const testimonials = [
 
 export default function Home() {
   return (
-    <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 bg-gray-100 max-w-6xl mx-auto">
+    <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 bg-gray-100 max-w-5xl mx-auto">
       {testimonials.map((t, i) => (
-        <FeedBackCard key={i} {...t} />
+        <FeedBackCard
+        key={i}
+        name={t.name}
+        trip={t.trip}
+        rating={t.rating}
+        text={t.text}
+        initials={t.initials}
+        img={t.img}
+      />
       ))}
     </main>
   );
