@@ -1,6 +1,7 @@
 import HairSalonsAroundYou from "@/components/ClickService1/AroundYou/AroundYou";
 import HairSalons from "@/components/ClickService1/HairSalon";
 import ReviewPage from "@/components/ClickService1/Review/ReviewPage";
+import FAQPage from "@/components/ClickService1/WhatAbout/WhatAbout";
 
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
             <HairSalons></HairSalons>
             <HairSalonsAroundYou></HairSalonsAroundYou>
             <ReviewPage></ReviewPage>
+            <FAQPage></FAQPage>
             
         </div>
       
