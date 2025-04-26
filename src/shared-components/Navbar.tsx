@@ -1,40 +1,76 @@
 "use client"
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import React from 'react';
+import React, { useState } from 'react';
 
 const Navbar = () => {
     const pathName = usePathname();
-    if(!pathName.includes('dashboard')){
-    return (
-        <div>
-            <nav className='flex justify-center'>
-                <ul className='flex justify-between w-1/2'>
-                   <Link href={'/'}> <li>Blog</li></Link>
+    const [menuOpen, setMenuOpen] = useState(false);
 
-                   <Link href={'/blogDetails'}> <li>Blog Details</li></Link>
-                   <Link href={'/feedback'}> <li>FeedBack</li></Link>
-                   <Link href={'/service'}> <li>Service Card </li></Link>
-                   <Link href={'/service2'}> <li>Service Card 2</li></Link>
-                   <Link href={'/metricCard'}> <li>MetricCard</li></Link>
-                   <Link href={'/activity'}> <li>RecentActivity</li></Link>
-                   <Link href={'/serviceDetails'}> <li>Service Detials</li></Link>
-                   <Link href={'/tabPanel'}> <li>Subscription </li></Link>
-                   <Link href={'/home'}> <li>Home </li></Link>
-                   <Link href={'/clickServiceOne'}> <li>ClickServiceOne </li></Link>
-                   <Link href={'/homeBlog'}> <li>HomeBlog </li></Link>
-                 
-                    
-                </ul>
+    if (!pathName.includes('dashboard')) {
+        return (
+            <nav className="bg-white shadow-md">
+                <div className="max-w-7xl mx-auto px-4">
+                    <div className="flex justify-between items-center py-4">
+                        {/* Logo or Brand */}
+                        <div className="text-xl font-bold text-gray-800">
+                            MyWebsite
+                        </div>
+
+                        {/* Desktop Menu */}
+                        <ul className="hidden md:flex gap-6 items-center">
+                            {navLinks.map((link, index) => (
+                                <li key={index}>
+                                    <Link href={link.href} className="text-gray-700 hover:text-blue-500 transition">
+                                        {link.name}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+
+                        {/* Mobile Menu Button */}
+                        <button
+                            className="md:hidden text-2xl"
+                            onClick={() => setMenuOpen(!menuOpen)}
+                        >
+                            ☰
+                        </button>
+                    </div>
+
+                    {/* Mobile Menu */}
+                    {menuOpen && (
+                        <ul className="flex flex-col gap-4 pb-4 md:hidden">
+                            {navLinks.map((link, index) => (
+                                <li key={index}>
+                                    <Link href={link.href} className="block text-black hover:text-blue-500 transition">
+                                        {link.name}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    )}
+                </div>
             </nav>
-            
-        </div>
-    );
-}
-else{
-    return  <></>
-    
-}
+        );
+    } else {
+        return null;
+    }
 };
+
+// Links array to keep code clean
+const navLinks = [
+    { name: "Blog", href: "/" },
+    { name: "Blog Details", href: "/blogDetails" },
+    { name: "Feedback", href: "/feedback" },
+    { name: "Service Card", href: "/service" },
+    { name: "Service Card 2", href: "/service2" },
+    { name: "Metric Card", href: "/metricCard" },
+    { name: "Recent Activity", href: "/activity" },
+    { name: "Service Details", href: "/serviceDetails" },
+    { name: "Subscription", href: "/tabPanel" },
+    { name: "Home", href: "/home" },
+    { name: "ClickServiceOne", href: "/clickServiceOne" },
+    { name: "HomeBlog", href: "/homeBlog" },
+];
 
 export default Navbar;

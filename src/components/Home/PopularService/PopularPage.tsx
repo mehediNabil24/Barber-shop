@@ -74,8 +74,8 @@ const services: Service[] = [
 
 const PopularService: React.FC = () => {
   return (
-    <div className="flex flex-col gap-4 p-6 max-w-7xl mx-auto">
-      <h2 className="text-xl font-bold text-gray-800">Popular Service</h2>
+    <div className="flex flex-col gap-4 p-6 px-[10px]  lg:px-[40px] xl:px-[200px] lg:my-[100px] my-[50px]  mx-auto">
+      <h2 className="text-[40px] font-bold text-gray-800 mb-[40px]">Popular Service</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {services.map((service, index) => (
           <PopularCard

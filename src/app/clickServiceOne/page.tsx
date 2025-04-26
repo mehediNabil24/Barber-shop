@@ -6,7 +6,7 @@ import ReviewPage from "@/components/ClickService1/Review/ReviewPage";
 export default function Home() {
     return (
 
-        <div>
+        <div className="bg-white">
             <HairSalons></HairSalons>
             <HairSalonsAroundYou></HairSalonsAroundYou>
             <ReviewPage></ReviewPage>

@@ -17,7 +17,7 @@ export default function HomeBlogCard({
   description,
 }: Props) {
   return (
-    <div className="bg-white p-4 rounded-xl shadow-sm flex flex-col gap-3">
+  <div className="bg-[#F6F6F6] p-4 rounded-xl shadow-sm flex flex-col gap-3">
       {/* Main Image */}
       <div className="relative w-full h-[200px] rounded-lg overflow-hidden">
         <Image
@@ -34,7 +34,7 @@ export default function HomeBlogCard({
         <p className="text-[16px] text-[#404040]">{date}</p>
 
         {/* Title */}
-        <h3 className="text-[22px] font-[600] text-[#101010]">{title}</h3>
+        <h3 className="text-[18px] font-[600] text-[#101010]">{title}</h3>
 
         {/* Description */}
         <p className="text-[16px] text-[#404040] line-clamp-2">{description}</p>

@@ -1,13 +1,14 @@
 // app/components/HairSalons.tsx
 
 import Image from 'next/image';
+import { FaPlus } from 'react-icons/fa';
 
 const HairSalons: React.FC = () => {
   return (
-    <div className="flex flex-col  gap-6 p-6 max-w-5xl mx-auto">
+    <div className="flex flex-col  gap-6 p-6 xl:px-[200px] lg:px-[40px] px-[10px] mx-auto lg:my-[100px] my-[50px]">
       {/* Text Section */}
       <div className=" flex flex-col gap-4">
-        <h1 className="text-3xl font-bold text-gray-800 leading-tight">
+        <h1 className="text-[40px] mb-[40px] font-bold text-gray-800 leading-tight">
           Hair salons near me - the best hairdressers and hair stylists
         </h1>
         <p className="text-sm text-gray-600 leading-relaxed">
@@ -22,19 +23,37 @@ const HairSalons: React.FC = () => {
       </div>
 
       {/* Image Section */}
-      <div className="relative  h-[500px] rounded-xl ">
-        <Image
-          src="/asset/Rectangle 102.png"
-          alt="Hair Salon"
-          fill
-          className="object-cover"
-        />
-        {/* Button Overlay */}
-        <button className="absolute bottom-10 right-[20%] bg-gray-900 text-white text-xs font-semibold py-2 px-4 rounded-full flex items-center gap-2">
-          <span>24/7 online booking</span>
-          {/* <span className="w-5 h-5 bg-white text-gray-900 rounded-full flex items-center justify-center">+</span> */}
-        </button>
+      <div className="relative w-full h-[500px] rounded-lg overflow-hidden">
+      {/* Background Image */}
+      <Image
+        src="/asset/Rectangle 102.png" // replace with correct path
+        alt="Massage Service"
+        fill
+        className="object-cover"
+      />
+
+      {/* Floating Icons */}
+      {/* Left Center Icon */}
+      <div className="absolute top-1/2 left-5 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md">
+        <FaPlus className="text-gray-600" />
       </div>
+
+      {/* Top Right Icon */}
+      <div className="absolute top-5 right-5 bg-white rounded-full p-2 shadow-md">
+        <FaPlus className="text-gray-600" />
+      </div>
+
+      {/* Bottom Right Icon */}
+      <div className="absolute bottom-5 right-5 bg-white rounded-full p-2 shadow-md">
+        <FaPlus className="text-gray-600" />
+      </div>
+
+      {/* 24/7 Booking Floating Button */}
+      <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-black/50 text-white flex items-center gap-2 py-2 px-4 rounded-full text-sm shadow-lg">
+        <FaPlus className="text-white" />
+        <span>24/7 online booking</span>
+      </div>
+    </div>
     </div>
   );
 };

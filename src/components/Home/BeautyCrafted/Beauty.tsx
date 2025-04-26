@@ -1,14 +1,15 @@
 // app/components/AboutUs.tsx
 
+
 import Image from 'next/image';
 
 const Beauty: React.FC = () => {
   return (
-    
-    <div className="flex flex-col md:flex-row gap-[60px] py-[116px] px-[200px] max-w-full mx-auto bg-gradient-to-b from-[#FFA50033] to-[#80008033]">
+    <div className='w-full bg-gradient-to-b from-[#FFA50033] to-[#80008033]'>
+    <div className="flex flex-col md:flex-row gap-10 py-16 px-[10px]  lg:px-[40px] xl:px-[200px] lg:my-[100px] my-[50px]  mx-auto ">
         
       {/* Image Section */}
-      <div className="relative w-full md:w-[600px]  h-[400px] rounded-xl overflow-hidden">
+      <div className="relative w-full md:w-1/2 h-[300px] md:h-[400px] rounded-xl overflow-hidden">
         <Image
           src="/asset/Rectangle 59.png"
           alt="Barber"
@@ -20,8 +21,8 @@ const Beauty: React.FC = () => {
       {/* Content Section */}
       <div className="flex-1 flex flex-col gap-4 justify-center">
         {/* Title */}
-        <h2 className="text-[16px] font-[400] text-[#101010]">About Us</h2>
-        <h3 className="text-[32px] font-semibold text-gray-800">Beauty Crafted for You</h3>
+        <h2 className="text-base font-normal text-[#101010]">About Us</h2>
+        <h3 className="text-2xl md:text-3xl font-semibold text-gray-800">Beauty Crafted for You</h3>
 
         {/* Description */}
         <p className="text-sm text-[#404040] leading-relaxed">
@@ -32,12 +33,12 @@ const Beauty: React.FC = () => {
         </p>
 
         {/* Button */}
-        <button className="bg-[#FFA600] text-white font-[500] text-[16px] py-[16px] px-[40px] rounded-lg w-fit hover:bg-yellow-500 transition">
+        <button className="bg-[#FFA600] text-white font-medium text-base py-3 px-8 rounded-lg w-fit hover:bg-yellow-500 transition">
           See More
         </button>
       </div>
     </div>
-    
+    </div>
   );
 };
 

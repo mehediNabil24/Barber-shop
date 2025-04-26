@@ -4,9 +4,9 @@ import Image from 'next/image';
 
 export default function RecentWorks() {
   return (
-    <section className="py-12 md:max-w-7xl mx-auto px-4 sm:px-8 md:px-12 ">
+    <section className="lg:px-[40px] xl:px-[200px]   px-[10px] lg:my-[100px] my-[50px]  mx-auto ">
       {/* Heading */}
-      <h2 className="text-3xl font-bold text-gray-900 mb-10">
+      <h2 className="text-[40px] font-bold text-gray-900 mb-[40px]">
         Recent Works Client
       </h2>
 
