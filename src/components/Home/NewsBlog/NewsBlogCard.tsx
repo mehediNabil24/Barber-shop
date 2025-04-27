@@ -17,7 +17,7 @@ export default function NewsBlogCard({
   return (
     <div className="bg-white  flex flex-col h-full overflow-hidden gap-3">
       {/* Main Image */}
-      <div className="relative w-full h-[150px] rounded-t-lg overflow-hidden">
+      <div className="relative w-full h-[200px] rounded-t-lg overflow-hidden">
         <Image
           src={imageSrc}
           alt={title}

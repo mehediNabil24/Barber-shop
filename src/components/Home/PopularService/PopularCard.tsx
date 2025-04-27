@@ -21,7 +21,7 @@ export default function PopularCard({
   return (
     <div className="bg-white  rounded-xl shadow-sm flex flex-col gap-3 w-full">
       {/* Main Image */}
-      <div className="relative w-full h-[150px] rounded-t-lg overflow-hidden">
+      <div className="relative w-full h-[200px] rounded-t-lg overflow-hidden">
         <Image
           src={imageSrc}
           alt={title}
@@ -51,7 +51,7 @@ export default function PopularCard({
 
         {/* Promoted Label */}
         {promoted && (
-          <div className="flex items-center gap-1 text-xs text-gray-500">
+          <div className="flex items-center gap-1 text-xs text-[#101010]">
             <span>Promoted</span>
             <FaInfoCircle className="text-gray-400" />
           </div>

@@ -48,7 +48,7 @@ const BlogDetailPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 p-6">
-      <div className="max-w-5xl mx-auto">
+      <div className="px-[10px]  lg:px-[40px] xl:px-[200px] lg:mt-[100px] mt-[50px]  mx-auto">
         {/* Blog Header */}
         <BlogHeader title={blogData.title} date={blogData.date} />
         {/* Hero Image */}

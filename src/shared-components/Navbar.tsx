@@ -71,6 +71,9 @@ const navLinks = [
     { name: "Home", href: "/home" },
     { name: "ClickServiceOne", href: "/clickServiceOne" },
     { name: "HomeBlog", href: "/homeBlog" },
+    { name: "About Us", href: "/aboutUs" },
+    { name: "Main-Blog_Details", href: "/mainBlogDetails" },
+    { name: "Hair-Cut_Service", href: "/hairCutService" },
 ];
 
 export default Navbar;

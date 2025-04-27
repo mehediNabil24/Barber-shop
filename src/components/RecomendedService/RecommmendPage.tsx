@@ -37,7 +37,7 @@ const services = [
 
 export default function RecommendPage() {
   return (
-    <main className="flex flex-col gap-4   xl:px-[200px] lg:px-[40px] px-[10px] lg:my-[100px] my-[50px] mx-auto">
+    <main className="flex flex-col gap-4   xl:px-[200px] lg:px-[40px] px-[10px] lg:mb-[100px] mb-[50px] mx-auto">
       <h2 className="text-[40px] font-bold text-gray-800 mb-[40px]">Recommended Service</h2>
       <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 overflow-x-auto">
         {services.map((service, index) => (

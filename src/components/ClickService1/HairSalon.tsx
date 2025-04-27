@@ -5,7 +5,7 @@ import { FaPlus } from 'react-icons/fa';
 
 const HairSalons: React.FC = () => {
   return (
-    <div className="flex flex-col  gap-6 p-6 xl:px-[200px] lg:px-[40px] px-[10px] mx-auto lg:my-[100px] my-[50px]">
+    <div className="flex flex-col  gap-6 p-6 xl:px-[200px] lg:px-[40px] px-[10px] mx-auto lg:mb-[100px] mb-[50px]">
       {/* Text Section */}
       <div className=" flex flex-col gap-4">
         <h1 className="text-[40px] mb-[40px] font-bold text-gray-800 leading-tight">

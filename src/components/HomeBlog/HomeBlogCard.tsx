@@ -19,7 +19,7 @@ export default function HomeBlogCard({
   return (
   <div className="bg-[#F6F6F6] p-4 rounded-xl shadow-sm flex flex-col gap-3">
       {/* Main Image */}
-      <div className="relative w-full h-[200px] rounded-lg overflow-hidden">
+      <div className="relative w-full h-[250px] rounded-lg overflow-hidden">
         <Image
           src={imageSrc}
           alt={title}

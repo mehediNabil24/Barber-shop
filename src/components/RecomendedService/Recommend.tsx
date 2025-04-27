@@ -31,7 +31,7 @@ export default function Recommend({
       </div> */}
 
       {/* Main Image */}
-      <div className="relative w-full h-[150px] rounded-t-lg overflow-hidden">
+      <div className="relative w-full h-[200px] rounded-t-lg overflow-hidden">
         <Image
           src={imageSrc}
           alt={title}
@@ -61,7 +61,7 @@ export default function Recommend({
 
         {/* Promoted Label */}
         {promoted && (
-          <div className="flex items-center gap-1 text-xs text-gray-500">
+          <div className="flex items-center gap-1 text-xs text-[#101010]">
             <span>Promoted</span>
             <FaInfoCircle className="text-gray-400" />
           </div>

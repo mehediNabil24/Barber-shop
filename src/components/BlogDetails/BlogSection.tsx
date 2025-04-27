@@ -9,7 +9,7 @@ interface BlogSectionProps {
 const BlogSection: React.FC<BlogSectionProps> = ({ subheading, content, imageSrc }) => {
   return (
     <div className="mb-8">
-      <h2 className="text-2xl font-semibold text-gray-800 mb-4">{subheading}</h2>
+      <h2 className="text-[40px] font-semibold text-gray-800 mb-4">{subheading}</h2>
       <div>
         <p className="text-gray-600 text-base flex-1">{content}</p>
         {imageSrc && (
