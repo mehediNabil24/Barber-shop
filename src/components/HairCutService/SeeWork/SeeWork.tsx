@@ -21,7 +21,7 @@ const workImages: WorkImages = {
 
 const SeeTheWorkPage: React.FC = () => {
   return (
-    <div className="flex flex-col gap-4 xl:px-[200px] lg:px-[40px] px-[10px] mx-auto lg:my-[100px] my-[50px]">
+    <div className="bg-white flex flex-col gap-4 xl:px-[200px] lg:px-[40px] px-[10px] mx-auto lg:my-[100px] my-[50px]">
       <SeeTheWorkContent largeImage={workImages.largeImage} smallImages={workImages.smallImages} />
     </div>
   );

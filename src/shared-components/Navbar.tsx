@@ -61,10 +61,10 @@ const Navbar = () => {
 const navLinks = [
     { name: "Blog", href: "/" },
     { name: "Blog Details", href: "/blogDetails" },
-    { name: "Feedback", href: "/feedback" },
-    { name: "Service Card", href: "/service" },
-    { name: "Service Card 2", href: "/service2" },
-    { name: "Metric Card", href: "/metricCard" },
+  
+  
+   
+    
     { name: "Recent Activity", href: "/activity" },
     { name: "Service Details", href: "/serviceDetails" },
     { name: "Subscription", href: "/tabPanel" },
@@ -74,6 +74,13 @@ const navLinks = [
     { name: "About Us", href: "/aboutUs" },
     { name: "Main-Blog_Details", href: "/mainBlogDetails" },
     { name: "Hair-Cut_Service", href: "/hairCutService" },
+    { name: "Contact_Form", href: "/contactForm" },
+    { name: "Click Service Page", href: "/clickServicePage" },
+    { name: "Login", href: "/login" },
+    { name: "Feedback", href: "/feedback" },
+    { name: "Service Card", href: "/service" },
+    { name: "Service Card 2", href: "/service2" },
+    { name: "Metric Card", href: "/metricCard" },
 ];
 
 export default Navbar;

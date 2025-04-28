@@ -86,7 +86,7 @@ const SalonTabsPage: React.FC = () => {
   const [activeTab, setActiveTab] = useState<"Details" | "Rating">("Details");
 
   return (
-    <div className="flex flex-col gap-4 xl:px-[200px] lg:px-[40px] px-[10px] mx-auto lg:my-[100px] my-[50px]">
+    <div className="bg-white flex flex-col gap-4 xl:px-[200px] lg:px-[40px] px-[10px] mx-auto lg:py-[100px] py-[50px]">
       <SalonTabs
         activeTab={activeTab}
         setActiveTab={setActiveTab}

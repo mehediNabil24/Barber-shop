@@ -53,7 +53,7 @@ const blogs: Blog[] = [
 
 const HomeBlogPage: React.FC = () => {
   return (
-    <div className="flex flex-col gap-4 p-6 lg:px-[40px] px-[10px] xl:px-[200px] lg:my-[100px] my-[50px] bg-white mx-auto">
+    <div className="flex flex-col gap-4 p-6 lg:px-[40px] px-[10px] xl:px-[200px] lg:mt-[100px] mt-[50px] pb-[100px] bg-white mx-auto">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {blogs.map((blog, index) => (
           <HomeBlogCard

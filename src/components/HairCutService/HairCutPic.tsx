@@ -38,10 +38,10 @@ const HairCutDetails: React.FC<SalonCardProps> = ({
   };
 
   return (
-    <div className="bg-white rounded-xl  flex flex-col gap-3 relative">
+    <div className="bg-white  rounded-xl  flex flex-row gap-3 relative">
       {/* Top Right Icons */}
      
-
+<div>
       <div className="flex flex-col  gap-10">
         {/* Main Image */}
         <div className="relative md:w-full w-[300px] h-[500px] rounded-lg overflow-hidden">
@@ -90,7 +90,9 @@ const HairCutDetails: React.FC<SalonCardProps> = ({
           <FaChevronRight className="text-gray-600" />
         </button>
       </div>
-       {/* Content */}
+      </div>
+      <div>
+         {/* Content */}
        <div className="flex flex-col gap-2 justify-center">
           {/* Tag and Rating */}
           <div className="flex flex-col gap-2">
@@ -122,6 +124,8 @@ const HairCutDetails: React.FC<SalonCardProps> = ({
             </div>
           )}
         </div>
+      </div>
+      
     </div>
   );
 };

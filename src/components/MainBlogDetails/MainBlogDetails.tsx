@@ -53,7 +53,7 @@ const recentPosts: Post[] = [
 
 const MainBlogDetailsPage: React.FC = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-8 xl:px-[200px] lg:px-[40px] px-[10px] mx-auto lg:my-[20px] my-[10px]">
+    <div className=" bg-white flex flex-col lg:flex-row gap-8 xl:px-[200px] lg:px-[40px] px-[10px] mx-auto lg:my-[20px] my-[10px]">
       {/* Main Blog Content */}
       <div className="flex-1">
         <BlogContent sections={blogSections} />

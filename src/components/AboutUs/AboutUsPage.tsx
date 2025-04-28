@@ -42,7 +42,7 @@ const AboutPage: React.FC = () => {
   const imageSrc = "/about-image.jpg";
 
   return (
-    <div className="flex flex-col gap-8 xl:px-[200px] lg:px-[40px] px-[10px] mx-auto lg:mb-[100px] mb-[50px]">
+    <div className=" bg-white flex flex-col gap-8 xl:px-[200px] lg:px-[40px] px-[10px] mx-auto lg:pt-[100px] pt-[50px] pb-[100px]">
       {/* Pass the image source as a prop to AboutHeader */}
       <AboutHeader imageSrc={imageSrc} />
 

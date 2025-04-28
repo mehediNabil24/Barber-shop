@@ -41,7 +41,7 @@ const faqs: FAQ[] = [
 
 export default function FAQPage() {
   return (
-    <div className="flex flex-col gap-6 xl:px-[200px] lg:px-[40px] px-[10px] mx-auto my-[50px]">
+    <div className="flex flex-col gap-6 xl:px-[200px] lg:px-[40px] px-[10px] mx-auto my-[50px] bg-white">
       <img
         src="/asset/Rectangle 102.png"
         alt="Hair Salon"

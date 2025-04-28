@@ -30,7 +30,7 @@ const blogs: Blog[] = [
 
 const NewsAndBlogSection: React.FC = () => {
   return (
-    <div className="flex flex-col gap-4 lg:px-[40px] xl:px-[200px] px-[10px] lg:my-[100px] my-[50px]  mx-auto">
+    <div className="flex flex-col gap-4 lg:px-[40px] xl:px-[200px] px-[10px] lg:mt-[100px] mt-[50px] pb-[100px]  mx-auto">
       <h2 className="text-[40px] font-bold mb-[40px] text-gray-800">News & Blog</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {blogs.map((blog, index) => (

@@ -10,7 +10,7 @@ import SeeTheWorkPage from "@/components/HairCutService/SeeWork/SeeWork";
 export default function Home() {
     return (
 
-       <div>
+       <div className="bg-white">
       <HairLayOut></HairLayOut>
       <SeeTheWorkPage></SeeTheWorkPage>
       <SalonTabsPage></SalonTabsPage>
