@@ -3,7 +3,7 @@ import SalonMapPage from "./MapSalon/MapSalon";
 
 export default function HairLayOut() {
   return (
-    <div className=" bg-white flex flex-col lg:flex-row gap-6 xl:gap-8 px-10 lg:px-[40px] xl:px-[200px] mx-auto my-10 sm:my-16 lg:my-20">
+    <div className=" bg-white flex flex-col lg:flex-row gap-6 xl:gap-8 px-[10px] lg:px-[40px] xl:px-[200px] mx-auto my-10 sm:my-16 lg:my-20">
       {/* Main Content */}
       <div className="flex-1 w-full">
         <HairCutContent />

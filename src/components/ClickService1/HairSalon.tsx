@@ -8,7 +8,7 @@ const HairSalons: React.FC = () => {
     <div className="flex flex-col  gap-6 p-6 xl:px-[200px] lg:px-[40px] px-[10px] mx-auto lg:mb-[100px] mb-[50px]">
       {/* Text Section */}
       <div className=" flex flex-col gap-4">
-        <h1 className="text-[40px] mb-[40px] font-bold text-gray-800 leading-tight">
+        <h1 className="lg:text-[40px] text-[24px]  mb-[40px] font-bold text-gray-800 leading-tight">
           Hair salons near me - the best hairdressers and hair stylists
         </h1>
         <p className="text-sm text-gray-600 leading-relaxed">

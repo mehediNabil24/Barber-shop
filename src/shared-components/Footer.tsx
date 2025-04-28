@@ -5,8 +5,8 @@ import { FaFacebookF, FaInstagram, FaXTwitter, FaLinkedinIn, FaYoutube } from "r
 export default function Footer() {
   return (
     <footer className="bg-[#3a3a3a] text-white text-sm">
-        <div className="xl:px-[200px] lg:px-[20px] px-[10px]">
-      <div className=" mx-auto py-8 flex flex-col md:flex-row md:justify-between items-center">
+      <div className="xl:px-[200px] lg:px-[40px] px-[10px] mx-auto">
+      <div className=" py-8 flex flex-col md:flex-row md:justify-between md:items-center">
         <div className="flex flex-wrap gap-6">
           <a href="#" className="hover:underline">About Us</a>
           <a href="#" className="hover:underline">Service</a>
@@ -16,12 +16,12 @@ export default function Footer() {
           <a href="#" className="hover:underline">Privacy Policy</a>
           <a href="#" className="hover:underline">Cookies</a>
         </div>
-        <div className="mt-6 md:mt-0">
+        <div className="mt-6 md:mt-0 ">
           <a href="#" className="hover:underline">Log in / Sign up</a>
         </div>
       </div>
       <hr className="border-gray-600 mx-6" />
-      <div className="max-w-7xl mx-auto  py-6 flex flex-col md:flex-row md:justify-between items-center">
+      <div className=" py-6 flex flex-col md:flex-row md:justify-between items-center">
         <div className="text-gray-300 mb-4 md:mb-0">
           Copyright © 2005 - 2025 Rated People Ltd. All Rights Reserved
         </div>
@@ -42,7 +42,7 @@ export default function Footer() {
             <FaYoutube size={16} className="bg-[#FFA600]" />
           </a>
         </div>
-      </div>
+        </div>
       </div>
     </footer>
   );

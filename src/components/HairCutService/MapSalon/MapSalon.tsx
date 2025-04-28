@@ -47,7 +47,7 @@ const salon: Salon = {
 
 const SalonMapPage: React.FC = () => {
   return (
-    <div className="flex flex-col    gap-4 mx-auto lg:my-[100px] my-[50px]">
+    <div className="flex flex-col    gap-4 mx-auto ">
       <SalonDetails
         mapImage={salon.mapImage}
         address={salon.address}

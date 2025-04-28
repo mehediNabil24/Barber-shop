@@ -32,7 +32,7 @@ export default function SalonDetails({
     <div className="bg-[#FFA60014] rounded-lg shadow-sm flex flex-col gap-6 p-6">
       {/* Map Placeholder and Address */}
       <div className="relative">
-        <div className="w-full h-[200px] relative rounded-lg overflow-hidden">
+        <div className="w-full h-[300px] relative rounded-lg overflow-hidden">
           <Image
             src={mapImage}
             alt="Map Placeholder"
@@ -40,17 +40,19 @@ export default function SalonDetails({
             objectFit="cover"
             className="rounded-lg"
           />
-          <div className="absolute top-4 left-4 bg-white p-3 rounded-lg shadow-md">
-            <p className="text-sm font-semibold text-gray-800">{address}</p>
+          {/* <div className="absolute bottom-2 left-6 bg-white p-3 rounded-lg shadow-md">
+
+            <p className="text-[14px] font-semibold text-gray-800">Diamond Cuts</p>
+            <p className="text-sm font-semibold text-gray-400">{address}</p>
           </div>
-          <div className="absolute top-4 right-4 bg-white p-2 rounded-full shadow-md">
+          <div className="absolute bottom-2 left-0 bg-white p-2 rounded-full shadow-md">
             <Image
-              src="/map-pin.png"
+              src="/asset/Ellipse 21.png"
               alt="Map Pin"
               width={24}
               height={24}
             />
-          </div>
+          </div> */}
         </div>
       </div>
 

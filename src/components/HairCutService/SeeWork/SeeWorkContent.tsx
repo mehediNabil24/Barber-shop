@@ -9,7 +9,7 @@ export default function SeeTheWorkContent({ largeImage, smallImages }: Props) {
   return (
     <div className="flex flex-col gap-4">
       {/* Section Title */}
-      <h3 className="text-[40px] font-bold text-black mb-[40px]">See The Work</h3>
+      <h3 className="lg:text-[40px] text-[24px] font-bold text-black mb-[40px]">See The Work</h3>
 
       {/* Image Layout using CSS Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">

@@ -1,6 +1,6 @@
 // app/page.tsx
 
-import LocationCard from "@/components/Location/LocationCard";
+
 import AroundCard from "./AroundCard";
 
 // Define the interface for a single location object
@@ -30,8 +30,8 @@ const locations: Location[] = [
 
 const HairSalonsAroundYou: React.FC = () => {
   return (
-    <div className="flex flex-col gap-4 p-6 xl:px-[200px] lg:px-[40px] px-[10px] mx-auto lg:my-[100px] my-[50px]">
-      <h2 className="text-[40px] mb-[40px] font-bold text-gray-800">Hair Salons - Around you</h2>
+    <div className="flex flex-col gap-4 px-[10px] xl:px-[200px] lg:px-[40px] mx-auto">
+      <h2 className="lg:text-2xl text-[24px]  font-bold text-gray-800">Hair Salons - Around you</h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {locations.map((location, index) => (
           <AroundCard

@@ -45,7 +45,7 @@ const reviews: Review[] = [
 const ReviewPage: React.FC = () => {
   return (
     <div className="flex flex-col gap-4 xl:px-[200px] lg:px-[40px] px-[10px] mx-auto lg:my-[100px] my-[50px]">
-      <h2 className="text-[40px] font-bold text-gray-800 mb-[40px]">Hair Salons-Customer Review</h2>
+      <h2 className="lg:text-[40px] text-[24px]  font-bold text-gray-800 mb-[40px]">Hair Salons-Customer Review</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {reviews.map((review, index) => (
           <ReviewCard

@@ -41,7 +41,7 @@ const HairCutContent: React.FC = () => {
 
   return (
     <div>
-    <div className=" lg:px-[0px] lg:my-[100px] my-[50px] px-[0px]  mx-auto">
+    <div className=" lg:px-[0px]   mx-auto">
       {salons.map((salon, index) => (
         <HairCutDetails key={index} {...salon} />
       ))}

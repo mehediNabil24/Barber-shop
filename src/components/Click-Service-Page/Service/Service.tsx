@@ -1,61 +1,88 @@
-'use client';
-
-import HairCutList from '@/components/HairCutService/HairCutList';
-import HairCutDetails from '@/components/HairCutService/HairCutPic';
-import React from 'react';
-// import ServiceDetails from '../ServiceDetails/ServiceDetails';
+import Haircomponent from "./HairComponent";
 
 
+const serviceData = [
+  {
+    salonName: "Reflection Barber & Beauty Salon",
+    rating: 4.5,
+    ratingCount: 15,
+    location: "7010 university ave, la Mesa, 91942",
+    distance: "4.3 mi",
+    promoted: true,
+    images: [
+      "/asset/Rectangle 41.png",
+      "/asset/Rectangle 43.png",
+      "/asset/Rectangle 44.png",
+      "/asset/Rectangle 44.png",
+      "/asset/Rectangle 44.png",
+     
+    ],
+    services: [
+      {
+        title: "Man's Hair Cut",
+        description: "Lowest price in 30 days, before discount: $75.00",
+        price: "100$",
+        duration: "1h",
+      },
+      {
+        title: "Beard Shave",
+        description: "Lowest price in 30 days, before discount: $50.00",
+        price: "100$",
+        duration: "1h",
+      },
+      {
+        title: "Specialty Haircut",
+        description: "Lowest price in 30 days, before discount: $30.00",
+        price: "100$",
+        duration: "1h",
+      },
+    ],
+  },
+  {
+    salonName: "HollywoodSoul Salon",
+    rating: 4.5,
+    ratingCount: 12,
+    location: "ArmStrong St., San Diego, 92111",
+    distance: "5.3 mi",
+    promoted: true,
+    images: [
+      "/asset/family plays.png",
+      "/asset/Rectangle 43.png",
+      "/asset/Rectangle 44.png",
+      "/asset/Rectangle 44.png",
+      "/asset/Rectangle 44.png",
+    ],
+    services: [
+      {
+        title: "Box Braids/ Knotless/ Twists",
+        description: "I offer ouchless braids... I don't braid tight! No pulling.",
+        price: "100$",
+        duration: "1h",
+      },
+      {
+        title: "Corn Rows",
+        description: "I offer ouchless braids... No pulling around edges.",
+        price: "100$",
+        duration: "1h",
+      },
+      {
+        title: "Sew In",
+        description: "I offer ouchless braids... No pulling around edges.",
+        price: "80$",
+        duration: "30min",
+      },
+    ],
+  },
+];
 
-// Define the salon data interface
-interface Salon {
-  mainImage: string;
-  tag: string;
-  rating: number;
-  title: string;
-  distance: string;
-  address: string;
-  promoted: boolean;
-  galleryImages: string[];
-}
-
-const ServiceContent: React.FC = () => {
-  const salons: Salon[] = [
-    {
-      mainImage: '/asset/Rectangle 41.png',
-      tag: 'Mobile Service',
-      rating: 4.5,
-      title: 'Hair Salon Ruebzj',
-      distance: '',
-      address: '2.4 Km 1200 northside New Work Salons (0252) ',
-      promoted: true,
-      galleryImages: [
-        '/asset/Rectangle 43.png',
-        '/asset/Rectangle 44.png',
-        '/asset/Rectangle 45.png',
-        '/asset/Rectangle 46.png',
-        '/asset/Rectangle 47.png',
-        
-      ],
-    },
-  ];
-
+export default function Service() {
   return (
-    <div>
-        
-    <div className=" lg:px-[0px] lg:my-[20px] my-[10px] px-[0px]  mx-auto">
-      {salons.map((salon, index) => (
-        <HairCutDetails key={index} {...salon} />
+    <div className=" space-y-12">
+      <h1 className="text-3xl font-bold">Services</h1>
+
+      {serviceData.map((service, idx) => (
+        <Haircomponent key={idx} {...service} />
       ))}
     </div>
-    
-
-    
-
-    
-  
-    </div>
   );
-};
-
-export default ServiceContent;
+}
