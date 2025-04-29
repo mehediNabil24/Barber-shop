@@ -1,4 +1,8 @@
-// app/page.tsx
+// app/page.tsx 
+import img1 from '@/assets/Rectangle 4.png'
+import img2 from '@/assets/Rectangle 4 (1).png'
+import img3 from '@/assets/Rectangle 4 (2).png'
+import img4 from '@/assets/Rectangle 4 (3).png'
 
 import Recommend from "./Recommend";
 
@@ -6,28 +10,28 @@ import Recommend from "./Recommend";
 
 const services = [
   {
-    imageSrc: '/asset/Rectangle 4.png',
+    imageSrc: img1,
     title: 'REFLECTION BARBER & BEAUTY SALON',
     address: '11786 East Colonial Dr, © Premier Suites, Orlando, 32817',
     rating: 4.5,
     promoted: true,
   },
   {
-    imageSrc: '/asset/Rectangle 4 (1).png',
+    imageSrc: img2,
     title: 'HOLLY WOODSoul SALON',
     address: '11786 East Colonial Dr, © Premier Suites, Orlando, 32817',
     rating: 4.5,
     promoted: true,
   },
   {
-    imageSrc: '/asset/Rectangle 4 (2).png',
+    imageSrc: img3,
     title: 'NIKKI BABE',
     address: '11786 East Colonial Dr, © Premier Suites, Orlando, 32817',
     rating: 4.5,
     promoted: true,
   },
   {
-    imageSrc: '/asset/Rectangle 4 (3).png',
+    imageSrc: img4,
     title: 'KRISPI KING 1',
     address: '11786 East Colonial Dr, © Premier Suites, Orlando, 32817',
     rating: 4.5,

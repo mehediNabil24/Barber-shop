@@ -81,6 +81,7 @@ const navLinks = [
     { name: "Service Card", href: "/service" },
     { name: "Service Card 2", href: "/service2" },
     { name: "Metric Card", href: "/metricCard" },
+    { name: "Connecxz", href: "/connecxz" },
 ];
 
 export default Navbar;
